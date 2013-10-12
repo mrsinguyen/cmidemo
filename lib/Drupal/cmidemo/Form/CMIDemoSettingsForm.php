@@ -53,7 +53,7 @@ class CMIDemoSettingsForm extends ConfigFormBase {
     $config = $this->configFactory->get('cmidemo.settings');
 
     $form['hello'] = array(
-      '#title' => t('Hello string'),
+      '#title' => t('Hello'),
       '#description' => t('The hello string'),
       '#type' => 'textfield',
       '#default_value' => $config->get('hello'),
