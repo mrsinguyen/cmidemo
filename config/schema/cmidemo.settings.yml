@@ -4,7 +4,7 @@ cmidemo.settings:
   mapping:
     hello:
       type: string
-      label: "The hello string"
+      label: 'The hello string'
     name:
       type: string
       label: 'The personal name'
