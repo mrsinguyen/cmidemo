@@ -1,0 +1,20 @@
+cmidemo.hello:
+  path: '/cmidemo/hello'
+  defaults:
+    _content: '\Drupal\cmidemo\Controller\CMIDemoController::hello'
+  requirements:
+    _permission: 'access content'
+
+cmidemo.about:
+  path: '/cmidemo/about'
+  defaults:
+    _content: '\Drupal\cmidemo\Controller\CMIDemoController::about'
+  requirements:
+    _permission: 'access content'
+
+cmidemo.settings:
+  path: '/cmidemo/config'
+  defaults:
+    _form: '\Drupal\cmidemo\Form\CMIDemoSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

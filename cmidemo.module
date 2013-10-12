@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ *
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function cmidemo_menu() {
+  $items = array();
+
+  $items['cmidemo/hello'] = array(
+    'title' => 'CMI Demo Hello',
+    'description' => 'The CMI Demo Hello page.',
+    'router_name' => 'cmidemo.hello',
+  );
+  $items['cmidemo/about'] = array(
+    'title' => 'CMI Demo About',
+    'description' => 'The CMI Demo About page.',
+    'router_name' => 'cmidemo.about',
+  );
+  $items['cmidemo/config'] = array(
+    'title' => 'CMI Demo configuration',
+    'description' => 'The CMI Demo Settings page.',
+    'router_name' => 'cmidemo.settings',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cmidemo_theme() {
+  return array(
+    'cmidemo_hello' => array(
+      'variables' => array('hello' => NULL, 'name' => NULL),
+      'template' => 'cmidemo-hello',
+    ),
+    'cmidemo_about' => array(
+      'variables' => array('about' => NULL),
+      'template' => 'cmidemo-about',
+    ),
+  );
+}

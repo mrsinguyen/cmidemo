@@ -1,0 +1,13 @@
+cmidemo.settings:
+  type: mapping
+  label: 'CMIDemo settings'
+  mapping:
+    hello:
+      type: string
+      label: "The hello string"
+    name:
+      type: string
+      label: 'The personal name'
+    about:
+      type: text
+      label: 'The about content'

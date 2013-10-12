@@ -1,0 +1,4 @@
+name: 'CMI Demo'
+type: module
+description: 'The demo module for Configuration Management Initiative in Drupal 8'
+core: 8.x
