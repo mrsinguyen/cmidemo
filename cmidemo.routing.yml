@@ -1,5 +1,5 @@
 cmidemo.hello:
-  path: '/cmidemo/hello'
+  path: '/cmidemo'
   defaults:
     _content: '\Drupal\cmidemo\Controller\CMIDemoController::hello'
   requirements:

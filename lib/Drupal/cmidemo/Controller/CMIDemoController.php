@@ -18,8 +18,10 @@ class CMIDemoController extends ControllerBase {
    * Hello callback method.
    */
   public function hello() {
-    $hello = $this->config('cmidemo.settings')->get('hello');
-    $name = $this->config('cmidemo.settings')->get('name');
+    $config = $this->config('cmidemo.settings');
+
+    $hello = $config->get('hello');
+    $name = $config->get('name');
 
     return array(
       '#theme' => 'cmidemo_hello',
@@ -32,7 +34,9 @@ class CMIDemoController extends ControllerBase {
    * About method callback
    */
   public function about() {
-    $about = $this->config('cmidemo.settings')->get('about');
+    $config = $this->config('cmidemo.settings');
+
+    $about = $config->get('about');
 
     return array(
       '#about' => $about,

@@ -11,7 +11,7 @@
 function cmidemo_menu() {
   $items = array();
 
-  $items['cmidemo/hello'] = array(
+  $items['cmidemo'] = array(
     'title' => 'CMI Demo Hello',
     'description' => 'The CMI Demo Hello page.',
     'router_name' => 'cmidemo.hello',
