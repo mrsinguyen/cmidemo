@@ -1,4 +1,4 @@
-cmi-demo
-========
+cmidemo
+=======
 
-Configuration Management Initiative in Drupal 8
+The cmidemo module for Configuration Management Initiative in Drupal 8
